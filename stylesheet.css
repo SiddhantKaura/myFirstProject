@@ -248,6 +248,7 @@ div.header-footer span.my-icon a:hover {
 
     div.col-2 {
         width: 50%;
+        height: 100%;
         padding: 0px 2%;
     }
 
@@ -259,10 +260,13 @@ div.header-footer span.my-icon a:hover {
     textarea,
     button {
         width: 90%;
+        margin-bottom: 7px;
+        padding: 3px;
+    font-size: 18px;
     }
 
     div.col form.contact-form {
-        padding: 2.5%;
+        padding: 1.5%;
     }
     
     div.header{
