@@ -59,7 +59,7 @@ nav ul.navbar li#hamburger-menu {
 
 div.header {
     background-color: darkseagreen;
-    height: 100vh;
+/*    height: 100vh;*/
 }
 
 div.header {
@@ -158,7 +158,8 @@ div.col button {
 }
 
 div.header-footer {
-    margin-top: 70px;
+    margin-top: 50px;
+    padding-bottom: 20px;
     font-size: 2.4rem;
     display: flex;
     justify-content: center;
@@ -166,6 +167,7 @@ div.header-footer {
 
 div.header-footer span.my-icon {
     margin-left: 2%;
+    margin-bottom: 4%;
 }
 
 div.header-footer span.my-icon a {
@@ -262,7 +264,7 @@ div.header-footer span.my-icon a:hover {
     }
     
     div.header{
-        height: 60vh;
+/*        height: 60vh;*/
     }
     
     div.header-footer{
