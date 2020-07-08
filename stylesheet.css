@@ -187,7 +187,7 @@ div.header-footer span.my-icon a:hover {
 
 /* RESPONSIVE  */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1020px) {
     nav ul.navbar li:not(:nth-child(1)) {
         display: none;
     }
@@ -236,6 +236,7 @@ div.header-footer span.my-icon a:hover {
     div.row {
         width: 100%;
         margin: 0;
+        padding-top: 10px;
     }
 
     div.col {
@@ -247,6 +248,7 @@ div.header-footer span.my-icon a:hover {
 
     div.col-2 {
         width: 50%;
+        padding: 0px 2%;
     }
 
     div.col h1 {
@@ -256,7 +258,7 @@ div.header-footer span.my-icon a:hover {
     div.col form.contact-form input,
     textarea,
     button {
-        width: 330px;
+        width: 90%;
     }
 
     div.col form.contact-form {
@@ -264,7 +266,8 @@ div.header-footer span.my-icon a:hover {
     }
     
     div.header{
-/*        height: 60vh;*/
+        height: 100%;
+        width: 100%;
     }
     
     div.header-footer{
