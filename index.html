@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>First | Website</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">  
-  </head>
-  <body>
-    <nav>
-      <ul class="navbar" id="nav-bar">
-        <li class="left-bar"><a href="#">Home</a></li>
-        <li class="left-bar"><a href="#contact-area">Contact Us</a></li>
-        <li class="right-bar" id="hamburger-menu"><a href="#" onclick="dropDownMenu()">&#9776;</a></li>  
-      </ul>  
-    </nav>
-    <hr>
-    <div class="row">
-      <div class="col">
-        <h1 class="contact-header">Contact Details</h1>  
-    <form class="contact-form" id="contact-area" action="contact.php">
-      <label>Name</label>
-      <br>       
-      <input type="text" name="name" required>
-        <br>
-      <label>Email-Id</label>
-        <br>
-      <input type="email" name="email" required>
-        <br>
-      <label>Contact No.</label>
-        <br>
-      <input type="number" name="contactno">
-        <br>
-      <label>Message</label>
-        <br>
-      <textarea name="message"></textarea>
-        <br>
-      <button type="submit">Submit</button>       
-    </form>      
-      </div>    
-      
-    </div>  
-    
 
-      <script src="javaScript.js" type="text/javascript"></script>  
-  </body>    
+<head>
+    <title>First | Website</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar" id="nav-bar">
+            <li class="left-bar"><a href="#">Home</a></li>
+            <li class="left-bar"><a href="#row-form">Contact Us</a></li>
+            <li class="right-bar" id="hamburger-menu"><a href="#" onclick="dropDownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <h1 class="mid-heading"><strong>Hi! I am Siddhant</strong></h1>
+        <div class="about-me">
+            <p class="about-info text-center">I am an aspiring <span>competitive programmer</span> and <span>web developer</span> looking for opportunities in IT sector. I love to explore new technologies and have keen interest in software development. I am pursuing my BTech. from Delhi Technological University in Mechanical Engineering. </p>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <p class="border-container one"><a>Experience</a></p>
+            </div>
+            <div class="col-2">
+                <p class="border-container two"><a>Skills</a></p>
+            </div>
+            <div class="col-2">
+                <p class="border-container one"><a>About</a></p>
+            </div>
+            <div class="col-2">
+                <p class="border-container two"><a>Contact</a></p>
+            </div>
+        </div>
+        <div class="header-footer">
+            <span class="my-icon"><a href="#"><i class="fab fa-github"></i></a></span>
+            <span class="my-icon"><a href="#"><i class="fab fa-linkedin"></i></a></span>
+            <span class="my-icon"><a href="#"><i class="fab fa-facebook"></i></a></span>
+            <span class="my-icon"><a href="#"><i class="fab fa-twitter"></i></a></span>
+        </div>
+    </div>
+
+
+
+    <hr>
+    <div class="row" id="row-form">
+        <div class="col">
+            <h1 class="contact-header">Contact Details</h1>
+            <form class="contact-form" id="contact-area" action="contact.php">
+                <label>Name</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+                <label>Email-Id</label>
+                <br>
+                <input type="email" name="email" required>
+                <br>
+                <label>Contact No.</label>
+                <br>
+                <input type="tel" name="contactno">
+                <br>
+                <label>Message</label>
+                <br>
+                <textarea name="message"></textarea>
+                <br>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="javaScript.js" type="text/javascript"></script>
+</body>
+
 </html>

@@ -1,38 +1,45 @@
-nav,header,footer{
+nav,
+header,
+footer {
     margin: 0;
     width: 100%;
 }
 
-body{
- margin: 0;
- width: 100%;    
+body {
+    margin: 0;
+    width: 100%;
 }
 
-nav{
-/*
-    position: absolute;
+nav {
+
+    position: sticky;
     top: 0;
-*/
+    z-index: 10;
+
 }
 
-nav ul.navbar{
+nav li a {
+    transition: all 0.7s;
+}
+
+nav ul.navbar {
     list-style: none;
     margin: 0;
     padding: 0;
     background-color: #07cbfc;
     overflow: hidden;
-    
+
 }
 
-nav ul.navbar li.left-bar{
+nav ul.navbar li.left-bar {
     float: left;
 }
 
-nav ul.navbar li.right-bar{
+nav ul.navbar li.right-bar {
     float: right;
 }
 
-nav ul.navbar li a{
+nav ul.navbar li a {
     text-decoration: none;
     color: white;
     display: block;
@@ -41,86 +48,224 @@ nav ul.navbar li a{
     font-size: 20px;
 }
 
-nav ul.navbar li a:hover{
+nav ul.navbar li a:hover {
     background-color: #b6f76c;
     color: black;
 }
 
-nav ul.navbar li#hamburger-menu{
+nav ul.navbar li#hamburger-menu {
     display: none;
 }
 
-div.row{
-    width: 100%;
+div.header {
+    background-color: darkseagreen;
+    height: 100vh;
+}
+
+div.header {
+    word-spacing: 1px;
+    letter-spacing: 2px;
+}
+
+div.header h1.mid-heading {
+    text-align: center;
+    margin: 0;
+    padding-top: 7%;
+    font-size: 52px;
+    word-spacing: 1.5;
+    letter-spacing: 2px;
+}
+
+div.about-me {
+    padding: 0 10%;
+}
+
+div.about-me p.text-center {
+    text-align: center;
+    font-size: 34px;
+    color: white;
 
 }
 
-div.col{
+div.about-me p span:hover {
+    color: blue;
+}
+
+div.row {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.col-2 {
+    width: 25%;
+    padding: 0px 6.25%;
+
+}
+
+p.border-container.one {
+    background: cornflowerblue;
+}
+
+p.border-container.two {
+    background: lightblue;
+}
+
+div.row div.col-2 p.border-container {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+
+div.col {
     border: 2px solid;
-    margin: 0px 7%;
+    margin: 0px 17%;
     padding-left: 45px;
     padding-right: 45px;
     border-radius: 7px;
+    width: 100%;
 }
 
-div.col h1{
+div.col h1 {
     font-size: 44px;
     text-align: center;
+    margin: 20px;
 }
 
 
-div.col label{
+div.col label {
     font-size: 25px;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
-div.col input,textarea,button{
+div.col input,
+textarea,
+button {
     width: 450px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 7px;
     font-size: 24px;
 }
 
-div.col button{
+div.col button {
     background-color: blue;
     color: #fff;
 }
 
+div.header-footer {
+    margin-top: 70px;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
 
-*{
+div.header-footer span.my-icon {
+    margin-left: 2%;
+}
+
+div.header-footer span.my-icon a {
+    color: azure;
+    opacity: 0.7;
+    box-shadow: 0 0 2px 1px;
+    border-radius: 10px;
+}
+
+div.header-footer span.my-icon a:hover {
+    box-shadow: 0 0 5px 2px;
+}
+
+* {
     box-sizing: border-box;
 }
 
 /* RESPONSIVE  */
 
-@media screen and (max-width: 650px){
-    nav ul.navbar li:not(:nth-child(1)){
+@media screen and (max-width: 750px) {
+    nav ul.navbar li:not(:nth-child(1)) {
         display: none;
     }
-    
-    nav ul.navbar li#hamburger-menu{
-         display: block;
-/*        float: right;*/
+
+    nav ul.navbar li#hamburger-menu {
+        display: block;
+        /*        float: right;*/
     }
-    
-    nav ul.navbar.responsive{
+
+    nav ul.navbar.responsive {
         position: relative;
     }
-    
-    nav ul.navbar.responsive li#hamburger-menu{
-         position: absolute;
-         top: 0;
-         right: 0;
+
+    nav ul.navbar.responsive li#hamburger-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: block;
     }
-    
-    nav ul.navbar.responsive li{
+
+    nav ul.navbar.responsive li {
         display: block;
         float: none;
     }
-    
-    nav ul.navbar.responsive li.left-bar a{
+
+    nav ul.navbar.responsive li.left-bar a {
         text-align: left;
+    }
+
+    div.header h1.mid-heading {
+        font-size: 38px;
+    }
+
+    div.header div.about-me {
+        margin: 0px;
+        padding: 0px 8px;
+    }
+
+    div.header div.about-me p.text-center {
+        font-size: 20px;
+        text-align: left;
+        word-spacing: 0.5px;
+        letter-spacing: 1.3px;
+    }
+
+    div.row {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.col {
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        border: none;
+    }
+
+    div.col-2 {
+        width: 50%;
+    }
+
+    div.col h1 {
+        font-size: 28px;
+    }
+
+    div.col form.contact-form input,
+    textarea,
+    button {
+        width: 330px;
+    }
+
+    div.col form.contact-form {
+        padding: 2.5%;
+    }
+    
+    div.header{
+        height: 60vh;
+    }
+    
+    div.header-footer{
+        margin-top: 60;
     }
 }
